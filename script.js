@@ -1,28 +1,32 @@
-// mutable variable
-let age = 25;
-age = 26;
-console.log(age);
+const now = new Date().getFullYear();
+const ageJonas = now - 1991;
+const ageAhmed = now - 1998;
+console.log(ageJonas, ageAhmed);
 
-// immutable variable
-const birthYear = 1998;
-//birthYear = 2022; // typeError : Assignment to constant variable
-console.log(birthYear);
+console.log(ageJonas * 2, ageJonas / 10, 2 ** 3);
+// 2 ** 3 means 2 to the power of 3 = 2 * 2 * 2
 
-// immutable variable
-//const job; // SyntaxError: Missing initializer in const declaration
-//console.log(job);
+// using plus operator to concatenate strings
+const firstName = "Jonas";
+const lastName = "Schmedtmann";
+console.log(firstName + " " + lastName);
 
-/*
-    In JavaScript, we have two types of mutable variables:
-    - let => mutable block scope variable
-    - var => mutable function scope variable
+// Assignment operators
+let x = 10 + 5; // 15
+x += 10; // x = x + 10 = 25
+x *= 4; // x = x * 4 = 100
 
-    And we have one type of immutable variable:
-    - const => immutable block scope variable
-*/
+// Increment and decrement operators
+x++; // x = x + 1
+x--; // x = x - 1
+console.log(x);
 
-// terrible practice
-// JavaScript allows you to declare a variable without a keyword, JavaScript will create a property on the global object.
-// This is a terrible practice and should be avoided.
-lastName = "kamel";
-console.log(lastName);
+// Comparison operators
+console.log(ageJonas > ageAhmed); // >, <, >=, <=
+console.log(ageAhmed >= 27);
+
+const isValidAge = ageAhmed >= 27;
+console.log(isValidAge);
+
+// Operator precedence
+console.log(now - 1991 > now - 1998);
