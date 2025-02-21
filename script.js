@@ -1,11 +1,9 @@
-const favourite = Number(prompt("What is your favourite number?"));
+const hasDriverLicense = true;
+const hasGoodVision = true;
+const isTired = false;
 
-if (favourite === 42) {
-  alert("That's my favourite number too!");
+if (hasDriverLicense && hasGoodVision && !isTired) {
+  console.log("Sarah is able to drive");
 } else {
-  console.log("That's not my favourite number 😞");
-}
-
-if (favourite !== 42) {
-  alert("That's not my favourite number 😞");
+  console.log("Someone else should drive");
 }
