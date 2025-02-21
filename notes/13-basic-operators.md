@@ -134,6 +134,3 @@ The video lesson introduces **JavaScript operators**, explaining their purpose, 
 - **Using variables improves readability and maintainability.**
 - **String concatenation** can be done with `+`, but template literals are preferred.
 - **Boolean results** from comparison operators are useful for **decision-making** in code.
-- **Next lesson** will cover **operator precedence** to clarify execution order.
-
-This summary provides a structured breakdown of the entire lesson on JavaScript operators. Let me know if you need any clarifications! 🚀
