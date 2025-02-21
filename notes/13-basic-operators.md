@@ -68,6 +68,7 @@ The video lesson introduces **JavaScript operators**, explaining their purpose, 
   ```
   - `"Jonas Schmedtmann"`
 - **Template literals** (better string concatenation method) are mentioned but not covered in this video.
+  ![A photo of transforming from concate using + operator to template literals](vs-code-template-string-conversion.gif)
 
 ---
 
