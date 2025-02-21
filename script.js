@@ -1,22 +1,11 @@
-// 5 falsy values: 0, '', undefined, null, NaN
-console.log(Boolean(0)); // false
-console.log(Boolean(undefined)); // false
-console.log(Boolean("Jonas")); // true
-console.log(Boolean({})); // true
-console.log(Boolean("")); // false
-console.log(Boolean("Ahmed" / 5)); // false
-console.log(Boolean(null)); // false
+const favourite = Number(prompt("What is your favourite number?"));
 
-const money = 0;
-if (money) {
-  console.log("Don't spend it all ;)");
+if (favourite === 42) {
+  alert("That's my favourite number too!");
 } else {
-  console.log("You should get a job!");
+  console.log("That's not my favourite number 😞");
 }
 
-let height;
-if (height) {
-  console.log("YAY! Height is defined");
-} else {
-  console.log("Height is UNDEFINED");
+if (favourite !== 42) {
+  alert("That's not my favourite number 😞");
 }
