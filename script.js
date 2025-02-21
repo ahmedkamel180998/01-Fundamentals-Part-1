@@ -1,25 +1,28 @@
-let javascriptIsFun = true;
-console.log(javascriptIsFun);
+// mutable variable
+let age = 25;
+age = 26;
+console.log(age);
 
-console.log(typeof true); // boolean
-console.log(typeof javascriptIsFun); // boolean
-console.log(typeof 23); // number
-console.log(typeof "Jonas"); // string
+// immutable variable
+const birthYear = 1998;
+//birthYear = 2022; // typeError : Assignment to constant variable
+console.log(birthYear);
 
-// Dynamic typing
-javascriptIsFun = "YES!";
-console.log(typeof javascriptIsFun); // string
+// immutable variable
+//const job; // SyntaxError: Missing initializer in const declaration
+//console.log(job);
 
-let year;
-console.log(year); // undefined
-console.log(typeof year); // undefined
-console.log(typeof undefined); // undefined
+/*
+    In JavaScript, we have two types of mutable variables:
+    - let => mutable block scope variable
+    - var => mutable function scope variable
 
-year = 1991;
-console.log(year); // 1991
-console.log(typeof year); // number
+    And we have one type of immutable variable:
+    - const => immutable block scope variable
+*/
 
-year = null;
-console.log(year); // null
-console.log(typeof year); // object
-console.log(typeof null); // object
+// terrible practice
+// JavaScript allows you to declare a variable without a keyword, JavaScript will create a property on the global object.
+// This is a terrible practice and should be avoided.
+lastName = "kamel";
+console.log(lastName);
