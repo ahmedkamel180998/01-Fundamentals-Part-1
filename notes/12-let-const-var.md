@@ -65,6 +65,3 @@ The transcript is a tutorial on JavaScript variable declarations, explaining the
 
 - The instructor acknowledges that some concepts (such as "block scope" and "function scope") are not yet covered but will be explained later.
 - He emphasizes that learning is **not always linear**, and some topics will make more sense as the learner progresses.
-- The next lesson will cover **operators in JavaScript**.
-
-This summary captures the key points of the transcript while maintaining its depth and clarity. Let me know if you'd like any part expanded! 🚀
