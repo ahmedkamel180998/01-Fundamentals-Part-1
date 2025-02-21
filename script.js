@@ -1,23 +1,22 @@
-let inputYear = 1991;
-console.log(String(inputYear) + 18); // 199118
-console.log(inputYear + 18); // 2009
+// 5 falsy values: 0, '', undefined, null, NaN
+console.log(Boolean(0)); // false
+console.log(Boolean(undefined)); // false
+console.log(Boolean("Jonas")); // true
+console.log(Boolean({})); // true
+console.log(Boolean("")); // false
+console.log(Boolean("Ahmed" / 5)); // false
+console.log(Boolean(null)); // false
 
-inputYear = "ahmed";
-console.log(Number(inputYear) + 18); // NaN
-console.log(typeof Number(inputYear));
+const money = 0;
+if (money) {
+  console.log("Don't spend it all ;)");
+} else {
+  console.log("You should get a job!");
+}
 
-// Type coercion
-console.log("I am " + 23 + " years old");
-console.log("23" - "10" - 3);
-console.log("23" / "2");
-console.log("23" > "18");
-
-let n = "1" + 1; // '11'
-n = n - 1; // 10
-console.log(n);
-
-n = 2 + 3 + 4 + "5"; // 95
-console.log(n);
-
-n = "10" - "4" - "3" - 2 + "5"; // 15
-console.log(n);
+let height;
+if (height) {
+  console.log("YAY! Height is defined");
+} else {
+  console.log("Height is UNDEFINED");
+}
