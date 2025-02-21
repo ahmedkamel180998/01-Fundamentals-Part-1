@@ -15,10 +15,10 @@ The transcript explains the **conditional (ternary) operator** in JavaScript, hi
   ```js
   const age = 23;
   age >= 18
-    ? console.log("I like to drink wine 🍷")
+    ? console.log("I like to drink soda 🥤")
     : console.log("I like to drink water 💧");
   ```
-  - If `age` is **23**, the output is `"I like to drink wine"`, because `23 >= 18` is `true`.
+  - If `age` is **23**, the output is `"I like to drink soda"`, because `23 >= 18` is `true`.
   - If `age` is **15**, the output is `"I like to drink water"`, because `15 >= 18` is `false`.
 
 ---
@@ -34,7 +34,7 @@ The transcript explains the **conditional (ternary) operator** in JavaScript, hi
 
    - The ternary operator consists of **three parts**:
      1. The **condition** (`age >= 18`)
-     2. The **expression to execute if true** (`"I like to drink wine"`)
+     2. The **expression to execute if true** (`"I like to drink soda"`)
      3. The **expression to execute if false** (`"I like to drink water"`)
 
 3. **Operators vs Expressions**
@@ -47,14 +47,14 @@ The transcript explains the **conditional (ternary) operator** in JavaScript, hi
 
 - Instead of logging the result directly, we can store the value in a variable:
   ```js
-  const drink = age >= 18 ? "wine 🍷" : "water 💧";
-  console.log(drink); // Output: "wine 🍷" if age is 23
+  const drink = age >= 18 ? "soda 🥤" : "water 💧";
+  console.log(drink); // Output: "soda 🥤" if age is 23
   ```
 - This is **more concise** than using an `if/else` statement:
   ```js
   let drink2;
   if (age >= 18) {
-    drink2 = "wine 🍷";
+    drink2 = "soda 🥤";
   } else {
     drink2 = "water 💧";
   }
@@ -70,7 +70,7 @@ The transcript explains the **conditional (ternary) operator** in JavaScript, hi
   - Unlike `if/else`, which cannot be used inside a **template literal**, the ternary operator **can**.
   - Example:
     ```js
-    console.log(`I like to drink ${age >= 18 ? "wine 🍷" : "water 💧"}`);
+    console.log(`I like to drink ${age >= 18 ? "soda 🥤" : "water 💧"}`);
     ```
   - Here, the ternary operator **returns a value**, which can be embedded inside the template literal.
 
